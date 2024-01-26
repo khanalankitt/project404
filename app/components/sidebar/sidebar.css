@@ -1,0 +1,42 @@
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 200px;
+  background: slateblue;
+  border: 1px solid white;
+}
+aside ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+aside ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  text-align: center;
+  display: flex;
+  color: white;
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  margin: 10px 5px;
+  padding: 10px 0px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+aside ul a:hover {
+  background: #453ae2;
+}
+aside ul a img {
+  margin: 0px 5px;
+  margin-right: 10px;
+}
+aside ul a li {
+  list-style-type: none;
+}/*# sourceMappingURL=sidebar.css.map */
