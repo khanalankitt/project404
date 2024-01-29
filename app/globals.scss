@@ -122,6 +122,8 @@ body{
         }
     }
 }
+
+
 @keyframes ldio-u7e6vmovpod { 0% { transform: rotate(0) } 100% { transform: rotate(360deg); } }
 .ldio-u7e6vmovpod > div {
   animation: ldio-u7e6vmovpod 1s infinite linear;
@@ -167,3 +169,47 @@ body{
   transform-origin: 0 0; 
 }
 .ldio-u7e6vmovpod div { box-sizing: content-box; }
+
+
+nav{
+    @include center;
+    position: absolute;
+    background: transparent;
+    justify-content: right;
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    ul{
+        @include center;
+        margin-right: 50px;
+        gap: 50px;
+        background: #f1f1f1;
+        padding:5px 20px;
+        border-radius: 5px;
+        .dark{
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+        a{
+            @include center;
+            text-align: center;
+            display: flex;
+            text-decoration: none;
+            padding:5px 0px;
+            font-size: 20px;
+            font-weight: bold;
+            color: midnightblue;
+            img{
+                margin-right: 10px;
+            }
+            li{
+                width: 100%;
+                text-align: left;
+                list-style-type: none;
+            }
+        }
+    }
+}
