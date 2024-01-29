@@ -1,0 +1,48 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: transparent;
+  justify-content: right;
+  margin-top: 20px;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  gap: 50px;
+  background: #f1f1f1;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+nav ul .dark {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+nav ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  text-decoration: none;
+  padding: 5px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: midnightblue;
+}
+nav ul a img {
+  margin-right: 10px;
+}
+nav ul a li {
+  width: 100%;
+  text-align: left;
+  list-style-type: none;
+}/*# sourceMappingURL=nav.css.map */

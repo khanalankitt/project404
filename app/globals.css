@@ -1,6 +1,188 @@
-*{
-    margin:0px;
-    padding: 0px;
-
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
+
+body {
+  position: relative;
+  background: #f1f1f1;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.home-container, .hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-container .image-hero, .hero .image-hero {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  filter: blur(10px);
+}
+.home-container .container-box, .hero .container-box {
+  height: 400px;
+  width: auto;
+  border-radius: 10px;
+  background: #f1f1f1;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 20px;
+}
+.home-container .container-box .text-box, .hero .container-box .text-box {
+  color: white;
+  margin-left: 30px;
+  padding: 20px;
+  color: #36383e;
+}
+.home-container .container-box .text-box a, .hero .container-box .text-box a {
+  color: midnightblue;
+}
+.home-container .container-box .text-box p, .hero .container-box .text-box p {
+  font-size: 20px;
+}
+.home-container .container-box .text-box h1, .hero .container-box .text-box h1 {
+  font-size: 60px;
+}
+.home-container .container-box .image-box img, .hero .container-box .image-box img {
+  border-radius: 10px;
+}
+
+.about-container {
+  background: #f1f1f1;
+  border-radius: 10px;
+  height: 90vh;
+  width: 95%;
+  margin: auto;
+}
+.about-container .left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-container .left h1 {
+  transform: rotate(-90deg);
+  font-size: 80px;
+  color: slateblue;
+}
+.about-container .right {
+  padding: 0px 20px;
+  padding-top: 20px;
+  height: 95%;
+  border-left: 3px solid slateblue;
+  margin-top: 100px;
+}
+.about-container .right h2 {
+  color: midnightblue;
+  margin-bottom: 5px;
+}
+.about-container .right p {
+  text-align: justify;
+  line-height: 25px;
+  font-size: 18px;
+  margin-left: 10px;
+  color: #36383e;
+}
+.about-container .right .ul-skills {
+  list-style-type: none;
+  line-height: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-container .right .ul-skills li {
+  text-align: center;
+  margin: 10px 5px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background: slateblue;
+  color: white;
+}
+.about-container .right .ul-education {
+  line-height: 25px;
+  list-style-type: none;
+  margin-left: 10px;
+}
+.about-container .right .ul-education li {
+  font-size: 18px;
+  color: #36383e;
+}
+
+@keyframes ldio-u7e6vmovpod {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.ldio-u7e6vmovpod > div {
+  animation: ldio-u7e6vmovpod 1s infinite linear;
+  transform-origin: 100px 100px;
+}
+
+.ldio-u7e6vmovpod > div div {
+  position: absolute;
+}
+
+.ldio-u7e6vmovpod > div div:nth-child(1), .ldio-u7e6vmovpod > div div:nth-child(2) {
+  width: 164px;
+  height: 164px;
+  border: 24px solid;
+  border-radius: 50%;
+  border-color: transparent #191970 #191970 #191970;
+  box-sizing: border-box;
+  position: absolute;
+  transform: rotate(45deg);
+  transform-origin: 100px 100px;
+}
+
+.ldio-u7e6vmovpod > div div:nth-child(1) {
+  transform: rotate(45deg) translate(18px, 18px);
+}
+
+.ldio-u7e6vmovpod > div div:nth-child(2) {
+  transform: rotate(0deg) translate(18px, 18px);
+}
+
+.ldio-u7e6vmovpod > div div:nth-child(3) {
+  width: 0;
+  height: 0;
+  border: 24px solid;
+  border-color: transparent transparent transparent #191970;
+  transform: translate(100px, 6px);
+}
+
+.loadingio-spinner-reload-t627bnu10x {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ldio-u7e6vmovpod {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+
+.ldio-u7e6vmovpod div {
+  box-sizing: content-box;
+}/*# sourceMappingURL=globals.css.map */

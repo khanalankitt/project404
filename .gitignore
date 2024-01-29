@@ -34,3 +34,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+sidebar.css
+sidebar.scss
+sidebar.css.map
+globals.css
