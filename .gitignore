@@ -35,7 +35,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-sidebar.css
-sidebar.scss
-sidebar.css.map
+nav.css
+nav.scss
+nav.css.map
+globals.scss
+globalc.css.map
 globals.css
