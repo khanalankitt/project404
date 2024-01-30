@@ -331,6 +331,7 @@ nav ul a li {
 }
 
 .sent {
+  visibility: hidden;
   position: absolute;
   padding: 10px 25px;
   font-size: 18px;
