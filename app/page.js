@@ -10,7 +10,6 @@ export default function Home(){
         height={2} 
         width={800} 
         alt="My Image"
-        quality={100}
       />
       <div className="container-box">
         <div className="text text-box">
