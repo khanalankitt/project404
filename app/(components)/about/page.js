@@ -95,17 +95,17 @@ export default function About() {
               </ul>
             </div>
             <div className="contact-right">
-              <form>
+              <form method="post">
                 <div id="div-container">
                   <section>
                     <p>Name</p>
-                    <input type="text" name="name" id="name" />
+                    <input type="text" name="name" id="name"  required/>
                     <p>Gmail</p>
-                    <input type="email" name="email" id="email" />
+                    <input type="email" name="email" id="email" required/>
                   </section>
                   <section>
                     <p>Message</p>
-                    <textarea name="textarea" id="textaea" cols="25" rows="5"></textarea>
+                    <textarea name="textarea" id="textaea" cols="20" rows="5"></textarea>
                   </section>
                 </div>
                 <div className="button-container">
@@ -120,6 +120,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <p className="sent">Message Sent</p>
     </>
   );
 }

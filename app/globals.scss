@@ -235,11 +235,11 @@ nav{
         form{
             @include center;
             flex-direction: column;
-            gap: 20px;
+            gap: 10px;
             background: slateblue;
             height: 100%;
             margin-top: 0px;
-            padding:20px 10px;
+            padding:10px 10px;
             border-radius: 10px;
             #div-container{
                 @include center;
@@ -251,19 +251,18 @@ nav{
                 }
                 input{
                     height: 30px;
-                    width: 200px;
-                    font-size: 16px;
-                    padding-left: 5px;
+                    width: 180px;
+                    font-size: 15px;
+                    padding:0px  5px;
                     border-radius: 5px;
                     outline: none;
-                    border: 1px solid midnightblue;
+                    border: none;
                 }
                 textarea{
-                    padding-left: 5px;
-                    padding-top: 3px;
+                    padding:5px 5px;
                     border-radius: 5px;
                     outline: none;
-                    border: 1px solid midnightblue
+                    border: none;
                 }
             }
             .button-container{
@@ -275,8 +274,8 @@ nav{
                     background: white;
                     border-radius:5px;
                     outline: none;
-                    width: 170px;
-                    height: 30px;
+                    width: 100px;
+                    height: 28px;
                     cursor: pointer;
                     font-size: 16px;
                 }
@@ -286,6 +285,38 @@ nav{
     .dateandtime{
         height: 100%;
         width:30%;
-        border: 1px solid slateblue;
+    }
+}
+.button-dateandtime{
+    border: 1px solid slateblue;
+    color: white;
+    background:lightgreen;
+    border-radius:5px;
+    outline: none;
+    width: 170px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.sent{
+    // visibility: hidden;
+    position: absolute;
+    padding: 10px 25px;
+    font-size: 18px;
+    right: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+    color: white;
+    background: slateblue;
+    border-radius: 5px;
+    animation: fade 3s infinite;
+}
+@keyframes fade{
+    0%{
+        opacity:0;
+    } 50%{
+        opacity: 1;
+    }100%{
+        opacity: 0;
     }
 }
