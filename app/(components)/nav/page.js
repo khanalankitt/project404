@@ -18,9 +18,6 @@ const pathname = usePathname()
                     <Link href="/projects">
                         <li>Projects</li>
                     </Link>
-                    <Link href="/contact">
-                        <li>Contact</li>
-                    </Link>
                     <button className='dark'>
                         <Image 
                             width="30" 

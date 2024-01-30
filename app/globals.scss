@@ -213,3 +213,79 @@ nav{
         }
     }
 }
+
+.contact{
+    width: 100%;
+    @include center;
+    align-items: flex-start;
+    gap: 40px;
+    .contact-left{
+        height: 100%;
+        width: 30%;
+        .ul-links{
+            padding:20px 0px;
+            list-style-type: none;
+            gap: 20px;
+            @include center;
+        }
+    }
+    .contact-right{
+        height: 100%;
+        width: 40%;
+        form{
+            @include center;
+            flex-direction: column;
+            gap: 20px;
+            background: slateblue;
+            height: 100%;
+            margin-top: 0px;
+            padding:20px 10px;
+            border-radius: 10px;
+            #div-container{
+                @include center;
+                gap: 20px;
+                p{
+                    font-size: 16px;
+                    margin: 0px;
+                    color: white;
+                }
+                input{
+                    height: 30px;
+                    width: 200px;
+                    font-size: 16px;
+                    padding-left: 5px;
+                    border-radius: 5px;
+                    outline: none;
+                    border: 1px solid midnightblue;
+                }
+                textarea{
+                    padding-left: 5px;
+                    padding-top: 3px;
+                    border-radius: 5px;
+                    outline: none;
+                    border: 1px solid midnightblue
+                }
+            }
+            .button-container{
+                display: flex;
+                gap: 20px;
+                #submit{
+                    border: 1px solid slateblue;
+                    color: slateblue;
+                    background: white;
+                    border-radius:5px;
+                    outline: none;
+                    width: 170px;
+                    height: 30px;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .dateandtime{
+        height: 100%;
+        width:30%;
+        border: 1px solid slateblue;
+    }
+}
