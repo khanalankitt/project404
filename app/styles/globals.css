@@ -324,18 +324,6 @@ nav ul a li {
   width: 30%;
 }
 
-.button-dateandtime {
-  border: 1px solid slateblue;
-  color: white;
-  background: lightgreen;
-  border-radius: 5px;
-  outline: none;
-  width: 170px;
-  height: 30px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
 .project-container {
   background: #f1f1f1;
   border-radius: 10px;
