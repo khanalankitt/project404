@@ -336,20 +336,6 @@ nav ul a li {
   font-size: 16px;
 }
 
-.sent {
-  visibility: hidden;
-  position: absolute;
-  padding: 10px 25px;
-  font-size: 18px;
-  right: 10px;
-  top: 50%;
-  transform: translate(0, -50%);
-  color: white;
-  background: slateblue;
-  border-radius: 5px;
-  animation: fade 3s infinite;
-}
-
 .project-container {
   background: #f1f1f1;
   border-radius: 10px;
