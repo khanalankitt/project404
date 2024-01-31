@@ -28,7 +28,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
-  filter: blur(10px);
+  filter: blur(5px);
 }
 .home-container .container-box, .hero .container-box {
   height: 400px;
@@ -439,6 +439,9 @@ nav ul a li {
 }
 
 @media (max-width: 768px) {
+  .home-container {
+    height: 100dvh;
+  }
   .home-container .container-box {
     flex-direction: column;
     height: 450px;
