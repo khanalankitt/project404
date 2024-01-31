@@ -6,7 +6,7 @@ export default function Home(){
     <div className="home-container hero">
       <Image
         className="image-hero" 
-        src='/me.jpg'  
+        src='/mebg.jpg'  
         height={2} 
         width={800} 
         alt="My Image"
