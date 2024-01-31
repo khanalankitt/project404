@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
-import "./globals.css"
+import "./styles/globals.css"
 import Nav from "./(components)/nav/page";
 export const metadata = {
   title: "Ankit Khanal",
