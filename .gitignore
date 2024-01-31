@@ -34,7 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
 # css
-globals.scss
-globalc.css.map
-globals.css
+
+*.css
