@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         rel="icon"
         href="/icon.png"
       />
-      <meta property="og:image" content="/icon.png" />
+      <meta property="og:image" content="/me.jpg" />
       </head>
       <body className={inter.className}>
       <Nav/>
