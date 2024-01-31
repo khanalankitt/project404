@@ -120,7 +120,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      <p className="sent">Message Sent</p>
     </>
   );
 }
