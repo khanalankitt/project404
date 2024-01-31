@@ -7,7 +7,7 @@ export default function About() {
       <div className="hero about-container">
         <div className="left">
           <h1>
-            LEARN <br /> ABOUT <br /> ME
+            LEARN ABOUT ME
           </h1>
         </div>
         <div className="right">
@@ -41,8 +41,8 @@ export default function About() {
             <h2>Education</h2>
           </b>
           <ul className="ul-education">
-            <li> - Completed Basic Level Examination(BLE) 2076</li>
-            <li> - Completed Secondary Education Examination(SEE) 2078</li>
+            <li> - Completed BLE 2076</li>
+            <li> - Completed SEE 2078</li>
             <li> - BSC CSIT (2079 - Current)</li>
           </ul>
           <br />
@@ -100,7 +100,7 @@ export default function About() {
                   <section>
                     <p>Name</p>
                     <input type="text" name="name" id="name"  required/>
-                    <p>Gmail</p>
+                    <p>Email</p>
                     <input type="email" name="email" id="email" required/>
                   </section>
                   <section>

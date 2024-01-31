@@ -35,12 +35,12 @@ body {
   width: auto;
   border-radius: 10px;
   background: #f1f1f1;
-  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
   padding: 0px 20px;
+  margin: 0px 20px;
 }
 .home-container .container-box .text-box, .hero .container-box .text-box {
   color: white;
@@ -67,6 +67,9 @@ body {
   height: 90vh;
   width: 95%;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about-container .left {
   width: 30%;
@@ -77,8 +80,9 @@ body {
 }
 .about-container .left h1 {
   transform: rotate(-90deg);
-  font-size: 80px;
+  font-size: 70px;
   color: slateblue;
+  text-align: center;
 }
 .about-container .right {
   padding: 0px 20px;
@@ -265,8 +269,8 @@ nav ul a li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid slateblue;
   gap: 10px;
-  background: slateblue;
   height: 100%;
   margin-top: 0px;
   padding: 10px 10px;
@@ -282,6 +286,7 @@ nav ul a li {
   font-size: 16px;
   margin: 0px;
   color: white;
+  color: #36383e;
 }
 .contact .contact-right form #div-container input {
   height: 30px;
@@ -290,13 +295,14 @@ nav ul a li {
   padding: 0px 5px;
   border-radius: 5px;
   outline: none;
-  border: none;
+  border: 1px solid slateblue;
 }
 .contact .contact-right form #div-container textarea {
   padding: 5px 5px;
   border-radius: 5px;
   outline: none;
   border: none;
+  border: 1px solid slateblue;
 }
 .contact .contact-right form .button-container {
   display: flex;
@@ -353,5 +359,239 @@ nav ul a li {
   }
   100% {
     opacity: 0;
+  }
+}
+.project-container {
+  background: #f1f1f1;
+  border-radius: 10px;
+  height: 90vh;
+  width: 95vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-container .left-project {
+  width: 17%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-container .left-project h1 {
+  transform: rotate(-90deg);
+  font-size: 70px;
+  color: slateblue;
+  text-align: center;
+}
+.project-container .right-project {
+  padding: 0px 20px;
+  padding-top: 20px;
+  height: 95%;
+  border-left: 3px solid slateblue;
+  margin-top: 100px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  align-content: center;
+}
+.project-container .right-project .project {
+  width: 400px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.04);
+}
+.project-container .right-project .project .image-h4 {
+  width: 70%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.project-container .right-project .project .image-h4 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project-container .right-project .project .button {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-container .right-project .project .button .demo {
+  height: 30px;
+  cursor: pointer;
+  width: 100px;
+  background: #36383e;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .home-container .container-box {
+    flex-direction: column;
+    height: 450px;
+    width: 340px;
+    margin: 0px 5px;
+  }
+  .home-container .container-box .text {
+    padding: 0px;
+    margin: 0 auto;
+  }
+  .home-container .container-box .text h1 {
+    font-size: 30px;
+  }
+  .home-container .container-box .text h2 {
+    font-size: 17px;
+  }
+  .home-container .container-box .text p {
+    font-size: 18px;
+  }
+  .home-container .container-box .image-box img {
+    height: 200px;
+    width: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about-container {
+    flex-direction: column;
+    height: 1200px;
+    padding: 20px 0px;
+  }
+  .about-container .left {
+    display: block;
+    height: 50px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .about-container .left h1 {
+    width: 100%;
+    font-size: 35px;
+    transform: none;
+    margin-bottom: 10px;
+  }
+  .about-container .right {
+    border: none;
+    margin: 0px 5px;
+    width: 99vw;
+    padding: 0px 10px;
+  }
+  .about-container .right p {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .about-container .right .ul-skills {
+    line-height: 18px;
+  }
+  .about-container .right .ul-skills li {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  .about-container .right .ul-education {
+    margin-left: 0px;
+  }
+  .about-container .right .ul-education li {
+    font-size: 16px;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact .contact-left {
+    width: 100%;
+  }
+  .contact .contact-right {
+    width: 100%;
+  }
+  .contact .contact-right form {
+    border: 1px solid slateblue;
+  }
+  .contact .contact-right form #div-container {
+    gap: 5px;
+    flex-direction: column;
+  }
+  .contact .contact-right form #div-container input, .contact .contact-right form #div-container textarea {
+    width: 200px;
+  }
+  .contact .dateandtime {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  nav {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 0px;
+  }
+  nav ul {
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    gap: 30px;
+  }
+  nav ul a {
+    padding: 0px;
+  }
+  nav ul a img {
+    margin: 0px;
+  }
+  nav ul a li {
+    font-size: 20px;
+  }
+  .project-container {
+    flex-direction: column;
+    height: auto;
+    padding-top: 50px;
+  }
+  .project-container .left-project {
+    width: 100%;
+  }
+  .project-container .left-project h1 {
+    width: 100%;
+    font-size: 35px;
+    transform: none;
+  }
+  .project-container .right-project {
+    padding: 10px 0px;
+    margin: 0px;
+    border: none;
+  }
+  .project-container .right-project .project {
+    width: 350px;
+    padding: 5px;
+  }
+  .project-container .right-project .project .image-h4 {
+    gap: 5px;
+  }
+  .project-container .right-project .project .image-h4 h4 {
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+  }
+  .project-container .right-project .project .button .demo {
+    width: 70px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  nav ul {
+    justify-content: center;
+    gap: 30px;
   }
 }/*# sourceMappingURL=globals.css.map */
