@@ -8,7 +8,7 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await fetch("/api/email", {
+    await fetch("https://ankitkhanal.vercel.app/api/email", {
       method: "POST",
       body: JSON.stringify({ name ,email, message }),
     })
