@@ -16,7 +16,7 @@ function ContactForm() {
     .catch(e=>console.log())
   }
   return (
-    <form onSubmit={handleSubmit} method="post">
+    <form onSubmit={handleSubmit}>
     <div id="div-container">
       <section>
         <p>Name</p>
