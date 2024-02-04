@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import DateAndTime from "../dateandtime/page";
+import ContactForm from "../form/page";
 export default function About() {
   return (
     <>
@@ -95,24 +96,7 @@ export default function About() {
               </ul>
             </div>
             <div className="contact-right">
-              <form method="post">
-                <div id="div-container">
-                  <section>
-                    <p>Name</p>
-                    <input type="text" name="name" id="name"  required/>
-                    <p>Email</p>
-                    <input type="email" name="email" id="email" required/>
-                  </section>
-                  <section>
-                    <p>Message</p>
-                    <textarea name="textarea" id="textaea" cols="20" rows="5"></textarea>
-                  </section>
-                </div>
-                <div className="button-container">
-                  <input type="submit" id="submit" value="Submit" />
-                  <input type="reset" id="submit" value="Reset" />
-                </div>
-              </form>
+            <ContactForm/>
             </div>
             <div className="dateandtime">
               <DateAndTime/>
