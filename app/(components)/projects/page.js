@@ -15,7 +15,7 @@ export default function Projects(){
             className:"project project2"
         },
         three:{
-            name:"My first react portfolio",
+            name:"My First React Portfolio",
             src:"/portfolio.png",
             href:"https://ankitkhanal.netlify.app",
             className:"project project3"
@@ -31,6 +31,24 @@ export default function Projects(){
             src:"/todoapp.png",
             href:"https://khanalankitt.github.io/todoapp",
             className:"project project5"
+        },
+        six:{
+            name:"My First Portfolio",
+            src:"/ankitdev.png",
+            href:"https://khanalankit69.com.np/",
+            className:"project project6"
+        },
+        seven:{
+            name:"Chef Website Template",
+            src:"/chef.png",
+            href:"https://khanalankitt.github.io/Chef/",
+            className:"project project7"
+        },
+        eight:{
+            name:"My First Website Ever",
+            src:"/smokefree.png",
+            href:"https://khanalankitt.github.io/Smokefree/",
+            className:"project project7"
         }
     }
     return(
