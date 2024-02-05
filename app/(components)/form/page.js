@@ -1,40 +1,41 @@
 "use client"
-import { useState } from "react"
-function ContactForm() {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
-  
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+import emailjs from '@emailjs/browser';
 
-    await fetch("/api/email", {
-      method: "POST",
-      body: JSON.stringify({ name ,email, message }),
-    })
-    .then(res=>console.log(res))
-    .catch(e=>console.log())
-  }
+import { useRef } from 'react';
+function ContactForm() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm('service_jqi6p8h', 'template_mvmt3td', form.current, {
+        publicKey: 't5vPvAvkb3z1l8Fuo',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
-    <form onSubmit={handleSubmit}>
+    <form ref={form} onSubmit={sendEmail}>
     <div id="div-container">
       <section>
         <p>Name</p>
         <input 
           type="text" 
-          name="fullname" 
+          name="from_name" 
           id="name" 
-          value={name} 
-          onChange={(event) => setName(event.target.value)} 
           required
         />
         <p>Email</p>
         <input 
           type="email" 
-          name="email" 
+          name="user_email" 
           id="email" 
-          value={email} 
-          onChange={(event) => setEmail(event.target.value)} 
           required
         />
       </section>
@@ -45,8 +46,6 @@ function ContactForm() {
           id="textaea" 
           cols="20" 
           rows="5" 
-          value={message} 
-          onChange={(e) => setMessage(e.target.value)}
         ></textarea>
       </section>
     </div>
