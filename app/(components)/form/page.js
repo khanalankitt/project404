@@ -12,8 +12,8 @@ function ContactForm() {
       })
       .then(
         () => {
-          alert("Email Sent Succesfully!");
           form.current?.reset();          
+          alert("Email Sent Succesfully!");
         },
         (error) => {
           alert('FAILED...', error.text);
@@ -30,6 +30,7 @@ function ContactForm() {
           type="text" 
           name="from_name" 
           id="name" 
+          autoComplete='on'
           required
         />
         <p>Email</p>
@@ -37,6 +38,7 @@ function ContactForm() {
           type="email" 
           name="user_email" 
           id="email" 
+          autoComplete='on'
           required
         />
       </section>
