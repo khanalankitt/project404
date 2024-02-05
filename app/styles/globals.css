@@ -231,9 +231,6 @@ nav ul a {
   font-weight: bold;
   color: midnightblue;
 }
-nav ul a img {
-  margin-right: 10px;
-}
 nav ul a li {
   width: 100%;
   text-align: left;
@@ -401,6 +398,31 @@ nav ul a li {
   outline: none;
 }
 
+@media (max-width: 1260px) {
+  .about-container {
+    height: auto;
+  }
+  .about-container .left h1 {
+    font-size: 40px;
+  }
+  .about-container .right {
+    margin-bottom: 40px;
+  }
+  .contact {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .contact .contact-left {
+    width: 100%;
+  }
+  .contact .contact-right form #div-container {
+    gap: 5px;
+    flex-direction: column;
+  }
+  .contact .contact-right form .button-container #submit {
+    width: 60px;
+  }
+}
 @media (max-width: 768px) {
   .home-container {
     height: 100dvh;

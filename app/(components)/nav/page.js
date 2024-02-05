@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation'
 export default function Nav(){
 const pathname = usePathname()
@@ -18,13 +17,6 @@ const pathname = usePathname()
                     <Link href="/projects">
                         <li>Projects</li>
                     </Link>
-                    <button className='dark'>
-                        <Image 
-                            width="30" 
-                            height="30" 
-                            src="/dark.png"
-                            alt="day-and-night"/>
-                    </button>
                 </ul>
             </nav>
         )}
