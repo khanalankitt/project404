@@ -12,10 +12,11 @@ function ContactForm() {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          alert("Email Sent Succesfully!");
+          form.current?.reset();          
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          alert('FAILED...', error.text);
         },
       );
   };
