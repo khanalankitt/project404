@@ -49,6 +49,12 @@ export default function Projects(){
             src:"/smokefree.png",
             href:"https://khanalankitt.github.io/Smokefree/",
             className:"project project7"
+        },
+        nine:{
+            name:"Weather App",
+            src:"/wimage.png",
+            href:"https://magicalweatherapp.netlify.app",
+            className:"project project8"
         }
     }
     return(
